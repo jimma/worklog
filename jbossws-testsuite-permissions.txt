@@ -1,0 +1,19 @@
+        <subsystem xmlns="urn:jboss:domain:security-manager:1.0">
+            <deployment-permissions>
+                <minimum-set>
+                    <permission class="java.lang.RuntimePermission" name="getClassLoader"/>
+                    <permission class="java.lang.RuntimePermission" name="createClassLoader"/>
+                    <permission class="java.lang.RuntimePermission" name="org.apache.cxf.permission" actions="resolveUri"/>
+                    <permission class="java.util.PropertyPermission" name="user.dir" actions="read"/>
+                    <permission class="java.util.PropertyPermission" name="jboss.bind.address" actions="read"/>
+                    <permission class="java.net.SocketPermission" name="*" actions="connect,resolve"/>
+                    <permission class="java.io.FilePermission" name="&amp;lt;&amp;lt;ALL FILES&amp;gt;&amp;gt;" actions="read"/>
+                    <permission class="javax.xml.ws.WebServicePermission" name="publishEndpoint"/>
+                    <permission class="java.lang.RuntimePermission" name="accessDeclaredMembers"/>
+                    <permission class="java.lang.RuntimePermission" name="modifyThread"/>
+                    <permission class="java.lang.RuntimePermission" name="setContextClassLoader"/>
+                    <permission class="java.lang.RuntimePermission" name="org.jboss.security.config.SecurityConfiguration.getApplicationPolicy"/>
+                    <permission class="java.lang.reflect.ReflectPermission" name="suppressAccessChecks"/>
+                </minimum-set>
+            </deployment-permissions>
+        </subsystem>
